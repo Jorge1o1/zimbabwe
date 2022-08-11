@@ -8,6 +8,8 @@
   <ItemGroup>
     <Compile Include="Data.fs" />
     <Compile Include="Land.fs" />
+    <Compile Include="Monument.fs" />
+    <Compile Include="Player.fs" />
     <Compile Include="Game.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
