@@ -15,11 +15,11 @@ module Land =
 
     type LandNode = { X: int; Y: int; LandType: LandType }
 
-    let stringToLandType s =
+    let parseLandFromString s =
         match s with
         | "E" -> Empty
         | "W" -> Water
-        | "O" -> Wood
+        | "T" -> Wood
         | "C" -> Clay
         | "I" -> Ivory
         | "D" -> Diamond
@@ -33,5 +33,5 @@ module Land =
             (fun i j x ->
                 { X = i
                   Y = j
-                  LandType = stringToLandType x })
+                  LandType = parseLandFromString x })
             arr2d
